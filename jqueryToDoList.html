@@ -2,33 +2,73 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <title> To Do </title>
+<link rel="stylesheet" type="text/css" href="todo.css">
+<title> To Do </title>
+
 </head>
 <body>
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="col-md-9">
-
-      <fieldset class="myList">
-        <table>
-         <tr>
-          <td class="item1"></td>
-        </tr>
-        <tr>
-          <td class="item2">2</td>
-        </tr>
-        <tr>
-          <td class="item3"></td>
-        </tr>
-        <tr>
-          <td class=""></td>
-        </tr>
-        </table>
-      </fieldset>
+<div id="window">
+  <div id="toolbar">
+    <div class="top">
+      <div id="lights">
+        <div class="light red">
+          <div class="glyph">×</div>
+          <div class="shine"></div>
+          <div class="glow"></div>
+        </div>        
+        <div class="light yellow">
+          <div class="glyph">-</div>
+          <div class="shine"></div>
+          <div class="glow"></div>
+        </div>
+        <div class="light green">
+          <div class="glyph">+</div>
+          <div class="shine"></div>
+          <div class="glow"></div>
+        </div>
+      </div>
+      <div id="title">
+        <div class="folder">
+          <div class="tab"></div>
+          <div class="body"></div>
+        </div>
+        heroku address
+      </div>
+      <div id="bubble">
+        <div class="shine"></div>
+        <div class="glow"></div>
+      </div>
     </div>
   </div>
-</div>
-<script type="text/javascript" src="jqueryToDoList.js"></script>
+  <div id="body">
+    <p> Last login: ***Date*** on ??? <br />
+Your-MacBook-Pro: user$  </p>  
+   
+    
+
+
+    <div class="cursor"> </div>  
+    <input id="newItem" type = "text" placeholder= "Whats on Your Schedule Today?" autocomplete="off">
+    <button id="addItem" type="submit" class="add btn btn-success">W:</button>
+    <button id="rmItem" type="submit" class="rm btn btn-danger">RM</button>
+    <button id="didItem" type="submit" class="done btn btn-info">Done</button>
+
+  </div>  
+
+   <div class="col-md-5">
+        <table class="table table-striped table-bordered table-hover table-condensed" id="theTable">
+          <thead>
+            <tr>
+              <th colspan="3">To Do</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+    
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="jqueryToDoList.js"></script>
 </body>
 </html>
